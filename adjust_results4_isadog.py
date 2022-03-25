@@ -87,7 +87,5 @@ def adjust_results4_isadog(results_dic, dogfile):
           if results_dic[key][1] in dognames_dic.keys():
             results_dic[key].append(1)
           else:
-            results_dic[key].append(0) 
-    print(results_dic)
-            
+            results_dic[key].append(0)             
 

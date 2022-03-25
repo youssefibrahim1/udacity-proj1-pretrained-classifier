@@ -1,0 +1,22 @@
+3 pet_images/
+
+ ** Statistics from calculates_results_stats() function:
+N Images: 40  N Dog Images: 30  N NotDog Images: 10 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  90.0  Pct Corr Breed:  90.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images: 40  N Dog Images: 30  N NotDog Images: 10 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  90.0  Pct Corr Breed:  90.0
+Model used: resnet
+Number of images: 40
+Number of dog images: 30
+Number of not dog images: 10
+Percent of correct dog: 100.0
+Percent of correct not dog: 90.0
+Percent of correct breed: 90.0
+cat norwegian elkhound, elkhound
+beagle walker hound, walker foxhound
+golden retriever leonberg
+great pyrenees kuvasz
+
+** Total Elapsed Runtime: 0:0:1

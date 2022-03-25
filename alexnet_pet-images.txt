@@ -1,0 +1,24 @@
+3 pet_images/
+
+ ** Statistics from calculates_results_stats() function:
+N Images: 40  N Dog Images: 30  N NotDog Images: 10 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images: 40  N Dog Images: 30  N NotDog Images: 10 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
+Model used: alexnet
+Number of images: 40
+Number of dog images: 30
+Number of not dog images: 10
+Percent of correct dog: 100.0
+Percent of correct not dog: 100.0
+Percent of correct breed: 80.0
+beagle walker hound, walker foxhound
+boston terrier basenji
+beagle english foxhound
+golden retriever tibetan mastiff
+great pyrenees kuvasz
+golden retriever afghan hound, afghan
+
+** Total Elapsed Runtime: 0:0:0

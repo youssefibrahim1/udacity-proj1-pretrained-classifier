@@ -83,7 +83,6 @@ def calculates_results_stats(results_dic):
     correct_label_matches = 0
     
     for key in results_dic:
-      print(results_dic[key])
       if results_dic[key][3] == 1 and results_dic[key][4] == 1:
         correct_dog_matches+=1
       
@@ -105,8 +104,18 @@ def calculates_results_stats(results_dic):
     files = os.listdir('pet_images')
     file_count = len(files)
     pct_classified_dog_images = (correct_dog_matches / number_of_dog_images) * 100
-    pct_non_dog_images = (correct_non_dog_images / number_non_dog_images) * 100
+    pct_non_dog_images = (correct_non_dog_images / number_non_dog_images) * 100 if number_non_dog_images > 0  else 0
     pct_classified_dog_breeds = (correct_breed_matches / number_of_dog_images) * 100
     pct_label_match = (correct_label_matches / file_count) * 100
     
-    return None
+    results_stats_dic = {}
+    results_stats_dic['n_images'] = number_of_images
+    results_stats_dic['n_dogs_img'] = number_of_dog_images
+    results_stats_dic['n_notdogs_img'] = number_non_dog_images
+    results_stats_dic['n_correct_dogs'] = correct_dog_matches
+    results_stats_dic['pct_correct_dogs'] = pct_classified_dog_images
+    results_stats_dic['pct_correct_notdogs'] = pct_non_dog_images
+    results_stats_dic['n_correct_breed'] = correct_breed_matches
+    results_stats_dic['pct_correct_breed'] = pct_classified_dog_breeds
+    
+    return results_stats_dic

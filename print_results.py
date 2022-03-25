@@ -62,5 +62,20 @@ def print_results(results_dic, results_stats_dic, model,
     Returns:
            None - simply printing results.
     """    
+    print('Model used:', model) 
+    print('Number of images:', results_stats_dic['n_images']) 
+    print('Number of dog images:', results_stats_dic['n_dogs_img']) 
+    print('Number of not dog images:', results_stats_dic['n_notdogs_img']) 
+    print('Percent of correct dog:', results_stats_dic['pct_correct_dogs']) 
+    print('Percent of correct not dog:', results_stats_dic['pct_correct_notdogs']) 
+    print('Percent of correct breed:', results_stats_dic['pct_correct_breed']) 
+
+    if print_incorrect_dogs or print_incorrect_breed:
+      for key in results_dic:
+        if print_incorrect_dogs and sum(results_dic[key][3:]) == 1:
+          print(results_dic[key][0], results_dic[key][1])
+        if print_incorrect_breed and sum(results_dic[key][3:]) == 2 and results_dic[key][2] == 0:
+          print(results_dic[key][0], results_dic[key][1])
+      
     None
                 
