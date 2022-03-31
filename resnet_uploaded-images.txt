@@ -1,0 +1,18 @@
+3 uploaded_images/
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+Model used: resnet
+Number of images: 4
+Number of dog images: 2
+Number of not dog images: 2
+Percent of correct dog: 100.0
+Percent of correct not dog: 100.0
+Percent of correct breed: 100.0
+
+** Total Elapsed Runtime: 0:0:0
